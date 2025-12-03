@@ -63,8 +63,9 @@ export default function ContactPage() {
                                     <div>
                                         <h3 className="font-semibold text-gray-900 dark:text-white">Address</h3>
                                         <p className="text-gray-600 dark:text-gray-400">
-                                            123 Tech Plaza, Suite 400<br />
-                                            San Francisco, CA 94107
+                                            UL Cyberpark<br />
+                                            Nellikode  <br />
+                                            Kozhikode, Kerala 673016
                                         </p>
                                     </div>
                                 </div>
@@ -72,14 +73,14 @@ export default function ContactPage() {
                                     <Phone className="h-6 w-6 text-primary mt-1" />
                                     <div>
                                         <h3 className="font-semibold text-gray-900 dark:text-white">Phone</h3>
-                                        <p className="text-gray-600 dark:text-gray-400">+1 (555) 123-4567</p>
+                                        <p className="text-gray-600 dark:text-gray-400">+91 7994325552</p>
                                     </div>
                                 </div>
                                 <div className="flex items-start space-x-4">
                                     <Mail className="h-6 w-6 text-primary mt-1" />
                                     <div>
                                         <h3 className="font-semibold text-gray-900 dark:text-white">Email</h3>
-                                        <p className="text-gray-600 dark:text-gray-400">hello@confyans.com</p>
+                                        <p className="text-gray-600 dark:text-gray-400">contact@confyans.com</p>
                                     </div>
                                 </div>
                             </div>
@@ -87,7 +88,7 @@ export default function ContactPage() {
                             <div className="rounded-xl bg-gray-50 p-6 dark:bg-gray-900">
                                 <h3 className="mb-2 font-semibold text-gray-900 dark:text-white">Office Hours</h3>
                                 <p className="text-sm text-gray-600 dark:text-gray-400">
-                                    Monday - Friday: 9:00 AM - 6:00 PM PST<br />
+                                    Monday - Friday: 9:00 AM - 6:00 PM<br />
                                     Saturday - Sunday: Closed
                                 </p>
                             </div>
