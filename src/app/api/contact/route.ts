@@ -1,7 +1,11 @@
 import { NextResponse } from "next/server";
+import dbConnect from "@/lib/db";
+import Contact from "@/models/Contact";
 
 export async function POST(request: Request) {
     try {
+        await dbConnect();
+
         const body = await request.json();
         const { name, email, subject, message } = body;
 
@@ -13,13 +17,20 @@ export async function POST(request: Request) {
             );
         }
 
-        // Simulate sending email (replace with actual email service like Resend or SendGrid)
+        // Create new contact entry
+        await Contact.create({
+            name,
+            email,
+            subject,
+            message,
+        });
+
+        // Simulate sending email (optional, keeping log from original code)
         console.log("Contact Form Submission:", { name, email, subject, message });
-        await new Promise((resolve) => setTimeout(resolve, 1000));
 
         return NextResponse.json(
             { message: "Message sent successfully" },
-            { status: 200 }
+            { status: 201 }
         );
     } catch (error) {
         console.error("Contact API Error:", error);
